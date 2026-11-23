@@ -1,0 +1,30 @@
+/* Homeflame site: warm cream + ember palette from lib/theme.ts. No external fonts or scripts. */
+:root { color-scheme: light; --bg: #FFF8F0; --ink: #1F2440; --soft: #5E6482; --brand: #FF7A1A; --brand-edge: #D4570A; --tint: #FFE7D3; --border: #F0E3D3; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 ui-rounded, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 760px; margin: 0 auto; padding: 20px 24px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 22px; color: var(--ink); text-decoration: none; }
+.brand img { border-radius: 9px; }
+nav { display: flex; gap: 6px; }
+nav a { color: var(--soft); text-decoration: none; font-weight: 700; padding: 6px 12px; border-radius: 999px; }
+nav a[aria-current="page"], nav a:hover { background: var(--tint); color: var(--brand-edge); }
+main { max-width: 760px; margin: 0 auto; padding: 8px 24px 64px; }
+h1 { font-size: 36px; line-height: 1.15; margin: 16px 0 8px; font-weight: 900; }
+h2 { font-size: 22px; margin: 36px 0 8px; color: var(--brand-edge); font-weight: 800; }
+p, li { color: #2F3556; }
+ul { padding-left: 22px; } li { margin: 6px 0; }
+a { color: var(--brand-edge); }
+strong { color: var(--ink); }
+.todo { background: #FFF3C7; border: 1px dashed #DB9A00; border-radius: 6px; padding: 0 6px; font-weight: 800; color: #7A5600; }
+.hero { text-align: center; padding: 24px 0 8px; }
+.hero img { border-radius: 36px; box-shadow: 0 12px 32px rgba(212, 87, 10, .18); }
+.hero h1 { font-size: 48px; margin-top: 20px; }
+.lede { font-size: 19px; max-width: 520px; margin: 0 auto; color: var(--soft); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 36px 0 24px; }
+.card { display: block; background: #fff; border: 2px solid var(--border); border-bottom-width: 5px; border-radius: 20px; padding: 20px; text-decoration: none; transition: transform .12s ease; }
+.card:hover { transform: translateY(-2px); }
+.card h2 { margin: 0 0 6px; }
+.card p { margin: 0; color: var(--soft); }
+.note { text-align: center; color: var(--soft); font-size: 15px; }
+footer { max-width: 760px; margin: 0 auto; padding: 24px; border-top: 1px solid var(--border); font-size: 14px; color: var(--soft); }
+@media (max-width: 520px) { header { flex-direction: column; align-items: flex-start; } h1 { font-size: 30px; } }
